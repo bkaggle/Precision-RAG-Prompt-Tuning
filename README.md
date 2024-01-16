@@ -32,7 +32,6 @@ To get started with this project, follow the steps below:
     pip install -r requirements.txt
     ```
 
-   ```
 Please be aware that the existing requirements.txt file includes only a limited set of packages at the moment, and it might not encompass all the necessary packages for your analysis. Make sure to supplement it with any additional packages you plan to install.
 
    ```bash
