@@ -14,12 +14,29 @@ PromptlyTech’s service automates the generation of diverse test cases, ensurin
 
 PromptlyTech’s service evaluates and ranks different prompts based on effectiveness, helping Users to get the desired outcome from LLM. It ensures that chatbots and virtual assistants provide accurate, contextually relevant responses, thereby improving user engagement and satisfaction.
 
-## Getting Started
+## Clone this package
 To get started with this project, follow the steps below:
 
-Clone this repository:
+1. Clone this repository:
+```bash
 git clone https://github.com/bkaggle/Precision-RAG-Prompt-Tuning.git
+```
 
+2. Navigate to the project directory:
+    ```bash
+    cd Precision-RAG-Prompt-Tuning
+    ```
+ 
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+   ```
+Please be aware that the existing requirements.txt file includes only a limited set of packages at the moment, and it might not encompass all the necessary packages for your analysis. Make sure to supplement it with any additional packages you plan to install.
+
+   ```bash
+   git clone https://github.com/bkaggle/Precision-RAG-Prompt-Tuning.git
 
 
 ## MIT License
