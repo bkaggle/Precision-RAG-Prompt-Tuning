@@ -22,7 +22,7 @@ git clone https://github.com/bkaggle/Precision-RAG-Prompt-Tuning.git
 
 
 
-MIT License
+## MIT License
 
 Copyright (c) 2024 Naol Lamesa
 
