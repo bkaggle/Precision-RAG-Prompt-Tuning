@@ -13,3 +13,9 @@ PromptlyTech’s service automates the generation of diverse test cases, ensurin
 ## 3. Prompt Testing and Ranking Service:
 
 PromptlyTech’s service evaluates and ranks different prompts based on effectiveness, helping Users to get the desired outcome from LLM. It ensures that chatbots and virtual assistants provide accurate, contextually relevant responses, thereby improving user engagement and satisfaction.
+
+## Getting Started
+To get started with this project, follow the steps below:
+
+Clone this repository:
+git clone https://github.com/bkaggle/Precision-RAG-Prompt-Tuning.git
