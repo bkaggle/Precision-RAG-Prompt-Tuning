@@ -18,9 +18,9 @@ PromptlyTech’s service evaluates and ranks different prompts based on effectiv
 To get started with this project, follow the steps below:
 
 1. Clone this repository:
-```bash
-git clone https://github.com/bkaggle/Precision-RAG-Prompt-Tuning.git
-```
+    ```bash
+    git clone https://github.com/bkaggle/Precision-RAG-Prompt-Tuning.git
+    ```
 
 2. Navigate to the project directory:
     ```bash
@@ -37,6 +37,7 @@ Please be aware that the existing requirements.txt file includes only a limited 
 
    ```bash
    git clone https://github.com/bkaggle/Precision-RAG-Prompt-Tuning.git
+   ```
 
 
 ## MIT License
