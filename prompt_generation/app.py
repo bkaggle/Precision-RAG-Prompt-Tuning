@@ -3,9 +3,9 @@ import pinecone
 from langchain_community.vectorstores import Pinecone
 from langchain.chains.question_answering import load_qa_chain
 from langchain_community.llms import OpenAI
-from ..prompt_generation.utils import read_doc, chunk_data, retrieve_answers, qa_manager
+from utils import read_doc, chunk_data, retrieve_answers, qa_manager
 import gradio as gr
-from ..prompt_generation.environment import OPENAI_API_KEY, \
+from environment import OPENAI_API_KEY, \
     PINECONE_API_KEY, PINECONE_ENVIRONMENT, \
     PINECONE_INDEX, DOC_DIR_PATH, OPENAI_LLM
 
@@ -31,17 +31,19 @@ def main(query: str):
 
     # Store embeddings in Pinecone
     index = Pinecone.from_documents(doc, embeddings, index_name=index_name)
-
+   
     # Load LLM from OpenAI
     llm = OpenAI(model_name=OPENAI_LLM, temperature=0.3)
 
     # Load Question-Answer Chain from LLM
     chain = load_qa_chain(llm, chain_type="stuff")
+    
 
     return retrieve_answers(index, chain, query)
 
 
 if __name__ == '__main__':
+    
     qa_app = gr.Interface(
         fn=qa_manager,
         inputs=[gr.Textbox(label="What are you looking for?", info="Search inside PDFs.")],

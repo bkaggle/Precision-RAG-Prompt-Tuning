@@ -18,6 +18,7 @@ def chunk_data(docs, chunk_size=800, chunk_overlap=50):
 
 # Cosine similarity to retrieve results from vectorDB
 def retrieve_query(index, query, k=2):
+    
     matching_results = index.similarity_search(query, k=k)
     return matching_results
 
@@ -30,5 +31,5 @@ def retrieve_answers(index, chain, query):
 
 
 # Get results from query
-def qa_manager(query):
-    return retrieve_answers(query)
+def qa_manager(index, chain, query):
+    return retrieve_answers(index, chain, query)
