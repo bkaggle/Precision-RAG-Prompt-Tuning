@@ -3,9 +3,9 @@ import pinecone
 from langchain_community.vectorstores import Pinecone
 from langchain.chains.question_answering import load_qa_chain
 from langchain_community.llms import OpenAI
-from utils import read_doc, chunk_data, retrieve_answers, qa_manager
+from ..prompt_generation.utils import read_doc, chunk_data, retrieve_answers, qa_manager
 import gradio as gr
-from environment import OPENAI_API_KEY, \
+from ..prompt_generation.environment import OPENAI_API_KEY, \
     PINECONE_API_KEY, PINECONE_ENVIRONMENT, \
     PINECONE_INDEX, DOC_DIR_PATH, OPENAI_LLM
 
@@ -46,9 +46,8 @@ if __name__ == '__main__':
         fn=qa_manager,
         inputs=[gr.Textbox(label="What are you looking for?", info="Search inside PDFs.")],
         outputs=[gr.Textbox(label="Results")],
-        title="Smart Q&A Application with OpenAI and Pinecone Integration",
-        description="A 'retrieval augmented generation' (RAG) app with Langchain and OpenAI in"
-                    " Python + Gradio interface + Pinecone vector database."
+        title="Automatic Prompt Generation",
+        description="A RAG app with Langchain and OpenAI in Gradio UI and Pinecone vector database."
     )
 
     # Launch Q&A app
